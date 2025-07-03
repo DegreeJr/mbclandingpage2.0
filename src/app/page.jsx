@@ -82,13 +82,14 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <p className="text-lg text-gray-700 leading-relaxed">
-            We specialize in four key technology domains:{" "}
-            <strong>Cybersecurity</strong> for advanced threat protection,
-            <strong> Big Data Analytics</strong> for intelligent insights,{" "}
-            <strong>Game Technology</strong> for interactive experiences, and{" "}
-            <strong>Geographic Information Systems</strong> for spatial
-            solutions. Our research-driven approach transforms complex
-            challenges into innovative, practical solutions.
+            MBC Laboratory, short for Multimedia, Big Data, and Cyber Security
+            Laboratory, is a research entity operating under the Ministry of
+            Communication and Multimedia (KK NCM). The laboratory primarily
+            focuses on studying and advancing knowledge in the fields of Cyber
+            Security, Big Data, and Multimedia. Established on October 4, 2019,
+            MBC Laboratory has become a dedicated research center committed to
+            understanding, addressing, and developing cutting-edge solutions
+            within its three core areas.
           </p>
         </div>
       </section>
@@ -123,7 +124,7 @@ export default function Home() {
                   services across all domains.
                 </p>
                 <div className="mt-4 text-blue-600 font-medium group-hover:text-blue-700">
-                  Learn more →
+                  Learn more ���
                 </div>
               </div>
             </Link>
