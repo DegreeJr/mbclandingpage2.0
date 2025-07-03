@@ -1,68 +1,6 @@
 import Link from "next/link";
 
 export default function DeveloperPage() {
-  const developers = [
-    {
-      id: 1,
-      name: "Sarah Chen",
-      role: "Lead Frontend Developer",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
-      github: "https://github.com/sarahchen",
-      portfolio: "https://sarahchen.dev",
-      avatar: "SC",
-    },
-    {
-      id: 2,
-      name: "Marcus Rodriguez",
-      role: "Backend Engineer",
-      skills: ["Node.js", "Python", "PostgreSQL", "Docker"],
-      github: "https://github.com/mrodriguez",
-      portfolio: "https://marcus.codes",
-      avatar: "MR",
-    },
-    {
-      id: 3,
-      name: "Aisha Patel",
-      role: "Data Scientist",
-      skills: ["Python", "Machine Learning", "TensorFlow", "R"],
-      github: "https://github.com/aishapatel",
-      portfolio: "https://aisha-analytics.com",
-      avatar: "AP",
-    },
-    {
-      id: 4,
-      name: "David Kim",
-      role: "DevOps Engineer",
-      skills: ["AWS", "Kubernetes", "Terraform", "CI/CD"],
-      github: "https://github.com/davidkim",
-      portfolio: "https://davidkim.io",
-      avatar: "DK",
-    },
-    {
-      id: 5,
-      name: "Elena Volkov",
-      role: "Cybersecurity Specialist",
-      skills: [
-        "Penetration Testing",
-        "Network Security",
-        "SIEM",
-        "Incident Response",
-      ],
-      github: "https://github.com/evolkov",
-      portfolio: "https://elena-security.com",
-      avatar: "EV",
-    },
-    {
-      id: 6,
-      name: "James Thompson",
-      role: "Game Developer",
-      skills: ["Unity", "C#", "WebGL", "3D Graphics"],
-      github: "https://github.com/jamesthompson",
-      portfolio: "https://jthompson-games.com",
-      avatar: "JT",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -123,49 +61,100 @@ export default function DeveloperPage() {
 
       {/* Page Header */}
       <section className="bg-gradient-to-br from-blue-50 to-gray-50 py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Meet Our Developers
+              Meet the Developer
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The talented team behind MBC Lab's digital presence. Our diverse
-              group of developers, engineers, and specialists brings
-              cutting-edge solutions to life across all our technology domains.
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              This website was developed and maintained by the in-house
+              developer at MBC Laboratory.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Team Grid */}
+      {/* Developer Profile */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {developers.map((developer) => (
-              <div
-                key={developer.id}
-                className="bg-white rounded-xl shadow-lg border border-gray-200 p-6 hover:shadow-xl transition-shadow"
-              >
-                {/* Profile Picture */}
-                <div className="flex justify-center mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
-                    {developer.avatar}
-                  </div>
-                </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8 md:p-12">
+            {/* Profile Picture */}
+            <div className="flex justify-center mb-8">
+              <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                RH
+              </div>
+            </div>
 
-                {/* Name and Role */}
-                <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    {developer.name}
-                  </h3>
-                  <p className="text-blue-600 font-medium">{developer.role}</p>
-                </div>
+            {/* Name and Role */}
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                Razan Handoko
+              </h2>
+              <p className="text-xl text-blue-600 font-semibold mb-2">
+                Full-Stack Developer at MBC Laboratory
+              </p>
+              <p className="text-gray-600">
+                Lead Web Developer & Digital Solutions Architect
+              </p>
+            </div>
 
-                {/* Skills */}
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-700 mb-3 flex items-center">
+            {/* Professional Bio */}
+            <div className="mb-10">
+              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center justify-center">
+                <svg
+                  className="w-5 h-5 mr-2 text-gray-700"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  />
+                </svg>
+                About
+              </h3>
+              <div className="bg-gray-50 rounded-xl p-6">
+                <p className="text-gray-700 text-lg leading-relaxed text-center">
+                  Passionate full-stack developer with expertise in modern web
+                  technologies and a deep understanding of both frontend and
+                  backend development. Specializing in creating responsive,
+                  user-friendly applications that drive business growth and
+                  enhance user experience. At MBC Laboratory, I'm responsible
+                  for developing and maintaining all digital platforms, ensuring
+                  they meet the highest standards of performance, security, and
+                  scalability.
+                </p>
+              </div>
+            </div>
+
+            {/* Technical Skills */}
+            <div className="mb-10">
+              <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center justify-center">
+                <svg
+                  className="w-5 h-5 mr-2 text-gray-700"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+                Technical Expertise
+              </h3>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Frontend Skills */}
+                <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                  <h4 className="font-semibold text-blue-900 mb-4 flex items-center">
                     <svg
-                      className="w-4 h-4 mr-2 text-gray-500"
+                      className="w-4 h-4 mr-2"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -174,16 +163,24 @@ export default function DeveloperPage() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
-                    Technical Skills
+                    Frontend Development
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {developer.skills.map((skill, index) => (
+                    {[
+                      "React",
+                      "Next.js",
+                      "TypeScript",
+                      "Tailwind CSS",
+                      "HTML5",
+                      "CSS3",
+                      "JavaScript",
+                    ].map((skill, index) => (
                       <span
                         key={index}
-                        className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium"
+                        className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
                       >
                         {skill}
                       </span>
@@ -191,29 +188,9 @@ export default function DeveloperPage() {
                   </div>
                 </div>
 
-                {/* Links */}
-                <div className="flex space-x-3">
-                  <a
-                    href={developer.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-gray-900 text-white px-4 py-2 rounded-lg font-medium text-center hover:bg-gray-800 transition-colors flex items-center justify-center"
-                  >
-                    <svg
-                      className="w-4 h-4 mr-2"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-                    </svg>
-                    GitHub
-                  </a>
-                  <a
-                    href={developer.portfolio}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 border border-blue-600 text-blue-600 px-4 py-2 rounded-lg font-medium text-center hover:bg-blue-50 transition-colors flex items-center justify-center"
-                  >
+                {/* Backend Skills */}
+                <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                  <h4 className="font-semibold text-green-900 mb-4 flex items-center">
                     <svg
                       className="w-4 h-4 mr-2"
                       fill="none"
@@ -224,40 +201,179 @@ export default function DeveloperPage() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
                       />
                     </svg>
-                    Portfolio
-                  </a>
+                    Backend Development
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Node.js",
+                      "Express.js",
+                      "Python",
+                      "PostgreSQL",
+                      "MongoDB",
+                      "REST APIs",
+                      "GraphQL",
+                    ].map((skill, index) => (
+                      <span
+                        key={index}
+                        className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Tools & Infrastructure */}
+                <div className="bg-purple-50 rounded-xl p-6 border border-purple-200">
+                  <h4 className="font-semibold text-purple-900 mb-4 flex items-center">
+                    <svg
+                      className="w-4 h-4 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    Tools & DevOps
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Git",
+                      "Docker",
+                      "AWS",
+                      "Vercel",
+                      "VS Code",
+                      "Figma",
+                      "Postman",
+                    ].map((skill, index) => (
+                      <span
+                        key={index}
+                        className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Specializations */}
+                <div className="bg-orange-50 rounded-xl p-6 border border-orange-200">
+                  <h4 className="font-semibold text-orange-900 mb-4 flex items-center">
+                    <svg
+                      className="w-4 h-4 mr-2"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                    Specializations
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      "Responsive Design",
+                      "Performance Optimization",
+                      "SEO",
+                      "Web Security",
+                      "UI/UX",
+                      "Agile",
+                    ].map((skill, index) => (
+                      <span
+                        key={index}
+                        className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            ))}
+            </div>
+
+            {/* Links */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://github.com/razanhandoko"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors flex items-center justify-center"
+              >
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 0C5.374 0 0 5.373 0 12 0 17.302 3.438 21.8 8.207 23.387c.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+                View GitHub Profile
+              </a>
+              <a
+                href="https://razanhandoko.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center"
+              >
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"
+                  />
+                </svg>
+                Visit Portfolio
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Join Our Team CTA */}
+      {/* Contact CTA */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Join Our Team
+            Let's Build Something Amazing
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Are you passionate about technology and innovation? We're always
-            looking for talented developers and researchers to join our mission.
+            Have a project in mind or need technical consultation? I'm always
+            excited to work on innovative solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
             >
-              Get In Touch
+              Start a Project
             </Link>
             <a
-              href="mailto:careers@mbclaboratory.com"
+              href="mailto:razan@mbclaboratory.com"
               className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
             >
-              Send Your Resume
+              Send Email
             </a>
           </div>
         </div>
