@@ -1,13 +1,37 @@
-import Link from "next/link";
+"use client";
+
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import GoogleMap from "../../components/GoogleMap";
+import emailjs from "emailjs-com";
+import { useRef, useState } from "react";
 
 export default function ContactPage() {
+  const form = useRef();
+  const [status, setStatus] = useState(null); // 'success' | 'error' | null
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+    emailjs.sendForm(
+      'service_mbclab',
+      'template_aghj1te',
+      form.current,
+      '9-U5F9jETZSCM2UEw'
+    ).then(
+      () => {
+        setStatus('success');
+        form.current.reset();
+      },
+      () => setStatus('error')
+    ).finally(() => setLoading(false));
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       <Navbar />
-
       {/* Page Header */}
       <section className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800 py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,7 +41,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
       {/* Contact Content */}
       <section className="py-20 bg-gray-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,7 +99,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div>
               <h2 className="text-2xl font-bold text-white mb-6">Send Us a Message</h2>
-              <form className="space-y-6" action="#" method="POST">
+              <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                 {/* Name Field */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Name *</label>
@@ -99,14 +122,22 @@ export default function ContactPage() {
                 </div>
                 {/* Submit Button */}
                 <div>
-                  <button type="submit" className="w-full bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">Send Message</button>
-                </div> 
+                  <button type="submit" className="w-full bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors disabled:opacity-60" disabled={loading}>
+                    {loading ? "Sending..." : "Send Message"}
+                  </button>
+                </div>
+                {/* Inline Success/Error Message */}
+                {status === 'success' && (
+                  <div className="mt-4 text-green-400 text-center font-semibold">Thank you! Your message has been sent.</div>
+                )}
+                {status === 'error' && (
+                  <div className="mt-4 text-red-400 text-center font-semibold">Sorry, there was a problem. Please try again.</div>
+                )}
               </form>
             </div>
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );
