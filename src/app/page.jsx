@@ -74,7 +74,7 @@ export default function Home() {
       <section className="py-16 bg-gray-900">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <p className="text-lg text-gray-200 leading-relaxed">
-          MBC Laboratory (Multimedia, Big Data, and Cybersecurity Laboratory) 
+          1MBC Laboratory (Multimedia, Big Data, and Cybersecurity Laboratory) 
           is a research and consulting center dedicated to technological innovation. 
           Operating under the Ministry of Communication and Multimedia, the lab was 
           established to explore and advance solutions in four critical domains: 
