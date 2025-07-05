@@ -68,7 +68,7 @@ mbclandingpage2025/
 >
 > Example for Vercel:
 > 1. Push your code to GitHub.
-> 2. Connect your repo to [Vercel](https://vercel.com/).
+> 2. Connect your repo to [Vercel](public/fotodeploy.png).
 > 3. Deploy with default settings.
 
 ---
