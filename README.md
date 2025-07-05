@@ -90,12 +90,6 @@ mbclandingpage2025/
 ## ⚙️ Backend Configuration
 
 > - We use EmailJS on the backend to integrate the contact form with email delivery functionality.
-<div align="center">
-  <p>
-      <img width="100%" src="public/backend.png">
-  </p>
-</div>
-
 ---
 
 _Contributions and feedback are welcome!_
