@@ -8,22 +8,37 @@ A modern, dark-themed landing page for MBC Laboratory built with [Next.js](https
 
 ```
 mbclandingpage2025/
-├── public/                # Static assets (images, icons, etc.)
+├── public/                        # Static assets (images, icons, etc.)
 ├── src/
-│   └── app/               # Next.js app directory
-│       ├── contact/       # Contact page
-│       ├── developer/     # Developer page
-│       ├── services/      # Services page
-│       ├── components/    # Reusable React components (Navbar, Footer, etc.)
-│       |── ...
-|       |            # Other pages and files
-├── package.json           # Project dependencies and scripts
-├── postcss.config.mjs     # PostCSS config
-├── tailwind.config.js     # Tailwind CSS config (if present)
-├── next.config.mjs        # Next.js config
-├── README.md              # Project documentation
+│   └── app/                       # Next.js app directory (App Router)
+│       ├── layout.js              # Root layout for all pages
+│       ├── globals.css            # Global styles (Tailwind, etc.)
+│       ├── page.jsx               # Home page ("/")
+│       ├── contact/
+│       │   └── page.jsx           # Contact page ("/contact")
+│       ├── developer/
+│       │   └── page.jsx           # Developer page ("/developer")
+│       ├── services/
+│       │   └── page.jsx           # Services page ("/services")
+│       ├── components/            # Reusable React components
+│       │   ├── Navbar.jsx         # Navigation bar
+│       │   ├── Footer.jsx         # Footer
+│       │   ├── GoogleMap.jsx      # Google Maps embed component
+│       └── favicon.ico            # Site favicon
+├── package.json                   # Project dependencies and scripts
+├── postcss.config.mjs             # PostCSS config
+├── tailwind.config.js             # Tailwind CSS config (if present)
+├── next.config.mjs                # Next.js config
+├── README.md                      # Project documentation
 └── ...
 ```
+
+**Page Structure Overview:**
+- `src/app/page.jsx` — Home page, includes hero carousel, intro, vision & mission, and preview sections.
+- `src/app/contact/page.jsx` — Contact form, address, map, and contact info.
+- `src/app/services/page.jsx` — List and description of lab services/domains.
+- `src/app/developer/page.jsx` — Developer profile, skills, and contact links.
+- `src/app/components/` — Shared UI components (Navbar, Footer, GoogleMap, etc.) used across pages.
 
 ---
 
@@ -31,20 +46,16 @@ mbclandingpage2025/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/USERNAME/REPO_NAME.git
-   cd REPO_NAME
+   git clone https://github.com/DegreeJr/mbclandingpage2.0.git
+   cd mbclandingpage2.0
    ```
 2. **Install dependencies:**
    ```bash
    npm install
-   # or
-   yarn install
    ```
 3. **Run the development server:**
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 4. **Open your browser:**
    Visit [http://localhost:3000](http://localhost:3000)
