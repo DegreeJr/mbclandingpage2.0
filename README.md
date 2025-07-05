@@ -71,7 +71,7 @@ mbclandingpage2025/
 > 2. Connect your repo to [Vercel](https://vercel.com/)
 <div align="center">
   <p>
-      <img width="100%" src="fotodeploy.png">
+      <img width="100%" src="public/fotodeploy.png">
   </p>
 </div>
 > 3. Deploy with default settings.
