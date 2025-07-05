@@ -86,7 +86,7 @@ export default function Home() {
             </div>
           </div>
           {/* Slide 2 */}
-          <div className="relative w-full h-[320px] md:h-[400px] flex items-center justify-center">
+          <div className="relative w-full h-[500px] md:h-[400px] flex items-center justify-center">
             <img src="/gametech.webp" alt="Carousel slide" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex flex-col items-center justify-center">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </div>
           {/* Slide 3 */}
-          <div className="relative w-full h-[320px] md:h-[400px] flex items-center justify-center">
+          <div className="relative w-full h-[500px] md:h-[400px] flex items-center justify-center">
             <img src="/gis.jpg" alt="Carousel slide" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex flex-col items-center justify-center">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
           </div>
           {/* Slide 4 */}
-          <div className="relative w-full h-[320px] md:h-[400px] flex items-center justify-center">
+          <div className="relative w-full h-[500px] md:h-[400px] flex items-center justify-center">
             <img src="/bigdata.jpg" alt="Carousel slide" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex flex-col items-center justify-center">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
