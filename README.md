@@ -15,7 +15,8 @@ mbclandingpage2025/
 │       ├── developer/     # Developer page
 │       ├── services/      # Services page
 │       ├── components/    # Reusable React components (Navbar, Footer, etc.)
-│       └── ...            # Other pages and files
+│       |── ...
+|       |            # Other pages and files
 ├── package.json           # Project dependencies and scripts
 ├── postcss.config.mjs     # PostCSS config
 ├── tailwind.config.js     # Tailwind CSS config (if present)
