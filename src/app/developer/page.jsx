@@ -23,7 +23,7 @@ export default function DeveloperPage() {
           <div className="bg-gray-800 rounded-2xl shadow-xl border border-gray-700 p-8 md:p-12">
             {/* Profile Picture */}
             <div className="flex justify-center mb-8">
-              <div className="w-32 h-32 bg-gradient-to-br from-blue-900 to-purple-900 rounded-full flex items-center justify-center text-white text-3xl font-bold shadow-lg">RH</div>
+              <img src="/FotoLinkedin2.jpeg" alt="Foto Saya" className="h-32 w-auto rounded-full " />
             </div>
             {/* Name and Role */}
             <div className="text-center mb-8">
