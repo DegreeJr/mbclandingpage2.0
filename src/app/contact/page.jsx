@@ -8,7 +8,7 @@ import { useRef, useState } from "react";
 
 export default function ContactPage() {
   const form = useRef();
-  const [status, setStatus] = useState(null); // 'success' | 'error' | null
+  const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e) => {
