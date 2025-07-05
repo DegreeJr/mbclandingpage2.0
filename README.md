@@ -1,6 +1,6 @@
 # MBC Laboratory Landing Page
 
-The landing page is available at the following link: [mbclaboratory.my.id]
+The landing page is available at the following link ![mbclaboratory.my.id](https://mbclaboratory.my.id)
 ---
 
 ## 📁 Project Structure
