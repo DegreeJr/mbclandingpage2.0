@@ -1,7 +1,6 @@
 # MBC Laboratory Landing Page
 
-A modern, dark-themed landing page for MBC Laboratory built with [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com).
-
+The landing page is available at the following link: [mbclaboratory.my.id]
 ---
 
 ## 📁 Project Structure
@@ -75,32 +74,27 @@ mbclandingpage2025/
   </p>
 </div>
 > 3. Deploy with default settings.
-
 ---
 
 ## 🔒 SSL Configuration
 
-> **TODO:** Add SSL configuration steps if deploying to a custom server or VPS.
->
-> - For Vercel/Netlify, SSL is automatic.
-> - For custom servers, use [Let's Encrypt](https://letsencrypt.org/) or your provider's SSL setup.
-
+> 1. For Vercel, SSL is automatic.
+> But we can see SSL certificate through website
+<div align="center">
+  <p>
+      <img width="100%" src="public/fotosertifikat.png">
+  </p>
+</div>
 ---
 
 ## ⚙️ Backend Configuration
 
-> **TODO:** Add backend/API configuration if you use a custom backend (e.g., for contact forms, authentication, etc.).
->
-> - If using EmailJS, no backend is required.
-> - For custom API routes, document environment variables and endpoints here.
-
----
-
-## 📚 Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vercel Deployment Guide](https://vercel.com/docs)
+> - We use EmailJS on the backend to integrate the contact form with email delivery functionality.
+<div align="center">
+  <p>
+      <img width="100%" src="public/backend.png">
+  </p>
+</div>
 
 ---
 
